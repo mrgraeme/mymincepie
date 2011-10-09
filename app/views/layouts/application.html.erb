@@ -1,11 +1,79 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>MyMincepie | <%= @title %> </title>
-		<%= csrf_meta_tag %>
+<head>
+	<title>MyMincepie | <%= @title %></title>
+	<%= stylesheet_link_tag 'slider', :media => 'screen' %>
+	<%= stylesheet_link_tag 'main', :media => 'screen' %>
+	
+	<%= javascript_include_tag :defaults %>
+	<%= javascript_include_tag 'GA_tracking.js', 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js', 'jquery.easing.1.2.js', 'jquery.anythingslider.js', 'slider_config.js' %>
+
 	</head>
+
 	<body>
-		<%= yield %>
+		<div class="page-wrapper">
+			
+			<!-- header -->
+			<div class="header">
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/jump-logo.png" />
+					</a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li class="selected">
+							<a href="index.html">home</a>
+						</li>
+						<li>
+							<a href="http://www.mrgraeme.com">blog</a>
+						</li>
+						<li>
+							<a href="mailto:graeme@jumpdigital.co.uk">contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- /header -->
+
+			<div class="clear"></div>
+
+<!-- banner -->
+			<div class="banner">
+				<div class="anythingSlider">
+					<div class="wrapper">
+						<ul>
+							<li>
+								<div class="heaven_banner">	
+									<div class="banner_text">
+										<h1><span class="pink">Waitrose </span>All butter mincepies</h1><br />
+										<p>Tasty buttergoodness bursting with fruityness<br />that much greater.</p><br />
+										<p><strong>portfolio > <a href="http://heaventwiddling.com/">more...</a></strong></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="heaven_banner">	
+									<div class="banner_text">
+										<h1><span class="pink">Waitrose </span>All butter mincepies</h1><br />
+										<p>Tasty buttergoodness bursting with fruityness<br />that much greater.</p><br />
+										<p><strong>portfolio > <a href="http://heaventwiddling.com/">more...</a></strong></p>
+									</div>
+								</div>
+							</li>									
+						</ul>
+					</div>
+				</div>
+			</div>
+<!-- / banner -->
+			
+			<div class="clear"></div>
+
+			<div class="main_content">
+				<%= yield %>
+			</div>
+			
+		</div>
 	</body>
 </html>

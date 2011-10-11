@@ -1,0 +1,123 @@
+
+/*
+F5F18C
+E2C553
+BE8F2B
+AB580E
+65350B
+*/
+
+.container {
+	width: 710px;
+	background: #fff;
+}
+
+body {
+	background: #e3dbbc;
+}
+
+header {
+background: url('/images/header_background.png') repeat-x;
+}
+
+header img {
+padding: 0 20px;
+}
+
+section {
+	margin-top: 1em;
+	font-size: 120%;
+	padding: 20px;
+	background: #fff;
+}
+
+section h1 {
+	font-size: 200%;
+}
+
+.round{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Links */
+
+a {
+	color: #09c;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #069;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #069;
+}
+
+/* Navigation */
+
+nav{
+	float: right;
+}
+
+nav{
+	background-color: #000;
+	padding: 0.2em;
+	white-space: nowrap;
+
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0.1em 0;
+}
+
+nav ul li a {
+	padding: 0 1em;
+	font-weight: normal;
+	color: #F5F18C;
+}
+
+nav ul li a:visited{
+	color: #fff;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+/* Signup */
+
+a.signup_button{
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	width: 150px;
+	color: #fff;
+	background: #006400;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 15px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  float: none;
+}

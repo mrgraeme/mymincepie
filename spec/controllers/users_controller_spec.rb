@@ -89,6 +89,11 @@ describe UsersController do
       it "should redirect to the show page" do
         post :create, :user => @attr
         response.should redirect_to(user_path(assigns(:user)))
+      end
+      
+      it 'should have a welcome message' do
+        post :create, :user => @attr
+        flash[:success].should =~ /Thank you for joining us at MyMincepie.com/i
       end    
     end
   end
